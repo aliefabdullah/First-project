@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+Bhaijaan+2:wght@700&family=Imperial+Script&family=Montserrat:wght@500&family=Rock+3D&family=Sofia&family=Trirong&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(background.jpg);
+        background-size: cover;
+    }
+
+    .left {
+        display: inline-block;
+        top: 22px;
+        left: 90px;
+        position: absolute;
+
+    }
+
+    .left img {
+        width: 82px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 15px;
+        left: 20px;
+        line-height: 19px;
+    }
+
+    .mid {
+
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+        text-align: center;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px;
+        font-size: 22px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(187, 187, 187);
+    }
+
+    .right {
+
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 22px;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        margin: 15px 11px;
+        padding: 3px 10px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        border-color: gray;
+        cursor: pointer;
+        font-size: 17px;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 31, 31);
+    }
+
+    .container {
+        border: 2px solid rgb(247, 247, 247);
+        display: inline-block;
+        width: 81%;
+        margin: 96px 85px;
+        padding: 28px 45px;
+        border-radius: 20px;
+        background-color: rgba(88, 88, 88, 0.87);
+        color: white;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    text-align: center;
+    padding: 10px;
+    margin: 4px;
+    width: 15%;
+    border-radius: 10px;
+    font-size: 19px;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>A Matrimony</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>The Best Matrimony Service You Will Ever Find On The Web</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+
+                <input type="text" name="" placeholder="You're Looking For">
+
+                <input type="text" name="" placeholder="Country">
+
+                <input type="text" name="" placeholder="Mobile.No">
+
+                <input type="text" name="" placeholder="Email">
+
+                <button class="btn">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
