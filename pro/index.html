@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a Webpage based on 17th jan eXcercise</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Imperial+Script&family=Josefin+Sans:ital@1&family=Libre+Baskerville&family=Montserrat:wght@500&family=Rock+3D&family=Sofia&family=Trirong&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+            color: rgb(10, 10, 10);
+            margin: 0px;
+            padding: 0px;
+            background: linear-gradient(rgba(88, 86, 86, 0.7), rgba(128, 128, 128, 0.7)), url(background.jpg);
+            background-size: cover;
+        }
+
+        .left {
+            display: inline-block;
+            border: 2px solid white;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: olive;
+        }
+
+        .left img {
+            width: 94px;
+            filter: invert(100%);
+            padding: 30px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            
+            width: 43%;
+            right: 100px;
+            top: 20px;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: rgb(99, 99, 99);
+            text-decoration: none;
+            font-size: 21px;
+            padding: 35px;
+        }
+
+        .container {
+            height: 153px;
+            width: 63%;
+            border: 2px solid white;
+            display: flex;
+            position: absolute;
+            top: 135px;
+            left: 552px;
+            border-radius: 15px;
+            background-color: olive;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .item {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            background-color: tomato;
+            border: 2px solid white;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item1 {
+            background: url(image1.jpg);
+            background-size: cover;
+        }
+
+        #item2 {
+            background: url(image2.jpg);
+            background-size: cover;
+        }
+
+        #item3 {
+            background: url(image3.jpg);
+            background-size: cover;
+        }
+
+        #item4 {
+            background: url(image4.jpg);
+            background-size: cover;
+        }
+
+        #item5 {
+            background: url(image5.jpg);
+            background-size: cover;
+        }
+
+        #item6 {
+            background: url(image6.jpg);
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!--left box for logo  -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Abdul Photoshop</div>
+        </div>
+        <!-- right box for navbar -->
+        <div class="right">
+            <ul class="navbar">
+                <li> <a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li> <a href="#">Contact</a> </li>
+                <li><a href="#">Store</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div>
+    </div>
+
+</body>
+
+</html>
